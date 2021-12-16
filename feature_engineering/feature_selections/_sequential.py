@@ -10,7 +10,7 @@ from sklearn.utils.validation import check_is_fitted
 from sklearn.model_selection import cross_val_score, GridSearchCV
 
 
-class AutoSequentialFeatureSelector(SequentialFeatureSelector):
+class AutoGridSearchSequentialFeatureSelector(SequentialFeatureSelector):
     """
     Modified SequentialFeatureSelector auto add/remove feature as long as it 
     would improve model performance, which eval based on a cross validation and
